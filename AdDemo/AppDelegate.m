@@ -5,7 +5,7 @@
 //  Created by Cnw on 2017/2/14.
 //  Copyright © 2017年 Cnw. All rights reserved.
 //
-
+@import Firebase;
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -16,7 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [FIRApp configure];
+      [GADMobileAds configureWithApplicationID:@"ca-app-pub-8621793235050362~5857161737"];
     return YES;
 }
 
